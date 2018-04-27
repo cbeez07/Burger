@@ -1,13 +1,13 @@
-const mysql = require('mysql');
+import { createConnection } from "mysql";
 
-const connection = mysql.createConnection({
+const connection = createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
     database: 'burger_db'
 });
 
-module.exports = connection.connect((err) => {
+connection.connect((err) => {
     if (err) {
         console.error(`error connecting: ${err.stack}`);
         return;
@@ -15,3 +15,5 @@ module.exports = connection.connect((err) => {
     console.log(`connected as id ${connection.threadId}`);
     
 });
+
+export default connection;
