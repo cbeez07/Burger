@@ -1,4 +1,4 @@
-import "./config/connection";
+const connection = require("../config/connection.js");
 
 // selectAll()
 // insertOne()
@@ -36,4 +36,4 @@ const orm = {
     }
 };
 
-export default orm;
+module.exports = orm;
