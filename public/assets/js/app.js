@@ -1,8 +1,8 @@
 // 1. make an on click event for devour button. Updates the devoured boolean
 // 2. make an on click event for the submit button. add the info to Sql and add a new burger to the list.
 
-$(() => {
-    $('.change-devour').on('click', (event) => {
+$(function() {
+    $('.change-devour').on('click', function(event) {
         
         console.log($(this).data('id'));
         
