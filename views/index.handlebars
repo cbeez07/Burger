@@ -1,0 +1,47 @@
+
+<div class='row'>
+    <div class="col-md-6">
+        <ul>
+            {{#each burger}}
+                {{#if devoured}}
+                    <div class="row">
+                        <div class="col-md-3 offset-md-6">{{burger_name}}</div>
+                        <div class="col-md-3">
+                            <button type="button" data-id="{{id}}" class="change-devour btn btn-primary" data-newdevour="{{devoured}}">Devour</button>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+    <div class="col-md-6">
+         {{#each burger}}
+            {{#unless devoured}}
+                <div class="row">
+                    <div class="col-md-3">{{burger_name}}</div>
+                    <div class="col-md-3">
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            {{/unless}}
+        {{/each}}
+
+    </div>
+</div>
+<div class="container text-center">
+    <div class="row">
+        <p class="text-center h3 mx-auto">Add a Burger!</p>
+    </div>
+    <div class="row">
+        <form class="create-form mx-auto">
+            <div class="form-group">
+                <label for="add">Burger...</label>
+                <textarea class="form-control" id="add" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+    </div>
+</div>

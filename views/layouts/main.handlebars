@@ -5,16 +5,21 @@
 		<link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
 		<title>Burgers</title>
 		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="/assets/js/app.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-	</head>
-	<body>
-        <header class="header center-align">
-            <H2>Eat The Burgers!</H2>
-            <img src="../../public/assets/img/burger.jpeg" class='responsive-img' alt="Burger">
-            
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">	</head>
+        <script src="/assets/js/app.js"></script>
+
+    <body>
+        <header class="jumbotron jumbotron-fluid bg-info">
+            <div class="container text-center">
+                <h1 class="display-4">Eat The Burger</h1>
+                <img src="../../public/assets/img/burger.jpeg" alt="Burger">
+            </div>
         </header>
+        <div class="row">
+            <div class="col-md-3 offset-md-3 h3">Devour the Burger:</div>
+            <div class="col-md-3 h3">Burger Devoured!</div>
+        </div>
 		{{{ body }}}
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
     </body>
 </html>
